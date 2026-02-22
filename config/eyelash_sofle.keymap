@@ -113,10 +113,10 @@
         NUM {
             bindings = <
 &none       &none     &none     &none      &none       &none     &mmv MOVE_UP     &none            &none            &none       &none      &none             &none
-&none       &none     &none     &none      &none       &none     &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&none       &kp LCMD  &kp LALT  &kp LCTRL  &kp LSHIFT  &none     &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&none       &none     &none     &none      &none       &none     &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &none
-&kp C_MUTE  &none     &none     &none      &none       &trans    &mkp LCLK        &none            &none            &none       &none      &none
+&none       &none     &none     &none      &none       &none     &mmv MOVE_DOWN   &kp PLUS     &kp N7  &kp N8  &kp N9  &kp N0    &kp GRAVE
+&none       &kp LCMD  &kp LALT  &kp LCTRL  &kp LSHIFT  &none     &mmv MOVE_LEFT   &kp MINUS    &kp N4  &kp N5  &kp N6  &kp LBKT  &kp RBKT
+&none       &none     &none     &none      &none       &none     &mmv MOVE_RIGHT  &kp EQUAL    &kp N1  &kp N2  &kp N3  &kp DOT    &none
+&kp C_MUTE  &none     &none     &none      &none       &trans    &mkp LCLK         &kp N0     &kp SPACE           &none       &none      &none
             >;
 
             display-name = "layer1";
