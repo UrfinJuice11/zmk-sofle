@@ -102,7 +102,7 @@
 &kp GRAVE   &kp Q        &kp W        &kp E         &kp R          &kp T          &kp DOWN_ARROW   &kp Y        &kp U          &kp I         &kp O        &kp P           &kp BACKSPACE
 &kp TAB     &hml LCMD A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G          &kp LEFT_ARROW   &kp H        &hmr RSHIFT J  &hmr RCTRL K  &hmr RALT L  &hmr RCMD SEMI  &kp APOS
 &kp LSHFT   &kp Z        &kp X        &kp C         &kp V          &kp B          &kp RIGHT_ARROW  &kp N        &kp M          &kp COMMA     &kp DOT      &kp FSLH        &kp CAPS
-&kp C_MUTE  &none        &none        &kp ESCAPE    &mo 5          &lt 1 ENTER    &kp ENTER        &lt 2 SPACE  &mo 3          &none         &none        &none
+&kp C_MUTE  &none        &none        &kp ESCAPE    &mo 4          &lt 1 ENTER    &kp ENTER        &lt 2 SPACE  &mo 3          &none         &none        &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -152,20 +152,22 @@
             label = "NAV";
         };
 
-        layer_4 {
+        SYM {
+            display-name = "SYM";
+            label = "SYM";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
+// ╭───────────────┬────────────────┬────────────────┬─────────────────┬─────────────────┬──────╮      T       ╭──────────┬──────────────────┬──────────────────┬─────────────────┬─────────────────┬─────────────╮
 
-            display-name = "layer4";
+    &none           &none            &none            &none             &none             &none      &none      &none      &none              &none              &none             &none             &none
+    &none           &none            &none            &none             &none             &none      &none      &kp PLUS   &kp AMPS           &kp ASTRK          &kp LPAR          &kp RPAR          &kp BSLH
+    &none           &kp LCMD         &kp LALT         &kp LCTRL         &kp LSHFT         &none      &none      &kp MINUS  &kp DLLR           &kp PRCNT          &kp CARET         &kp LBKT          &kp RBKT
+    &none           &kp LC(A)        &none            &none             &none             &none      &none      &kp EQUAL  &kp EXCL           &kp AT             &kp HASH          &kp UNDER         &none
+    &kp C_MUTE      &none            &none            &none             &trans            &trans     &none      &trans     &trans             &none              &none             &none
+            >;
             sensor-bindings = <&scroll_encoder>;
         };
 
-        SYM {
+        empty {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET
